@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Campaign" representedClassName="SRCampaign" syncable="YES">
+        <attribute name="campaignDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="campaignId" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dataCreatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="typeNativeValue" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parentMarket" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Market" syncable="YES"/>
+    </entity>
+    <entity name="CartItem" representedClassName="SRCartItem" syncable="YES">
+        <attribute name="cartItemId" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="notificationId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="good" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Good" syncable="YES"/>
+    </entity>
+    <entity name="FavoriteMarket" syncable="YES">
+        <attribute name="businessHours" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coordinateLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="coordinateLongitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dataCreatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="logoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="marketDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="marketId" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="panoramaURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Good" representedClassName="SRGood" syncable="YES">
+        <attribute name="discountRate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="eventDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="goodDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="goodId" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="normalPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="retailPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parentCampaign" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Campaign" syncable="YES"/>
+    </entity>
+    <entity name="Market" representedClassName="SRMarketf" syncable="YES">
+        <attribute name="businessHours" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coordinateLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="coordinateLongitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dataCreatedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="logoURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="marketDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="marketId" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="panoramaURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Market" positionX="-117" positionY="-202" width="128" height="193"/>
+        <element name="Campaign" positionX="-288" positionY="45" width="144" height="163"/>
+        <element name="Good" positionX="-63" positionY="224" width="128" height="193"/>
+        <element name="CartItem" positionX="187" positionY="108" width="128" height="88"/>
+        <element name="FavoriteMarket" positionX="-54" positionY="-27" width="128" height="195"/>
+    </elements>
+</model>

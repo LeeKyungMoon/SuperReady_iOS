@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMServiceUnderConstructionViewController">
+            <connections>
+                <outlet property="messageLabel" destination="jlo-6L-9HF" id="7EN-iP-hUJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVF-Cg-kCZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="qEC-kg-7RQ"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ServiceFailure" translatesAutoresizingMaskIntoConstraints="NO" id="FLF-0m-SgM">
+                    <rect key="frame" x="13" y="162" width="294" height="244"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="244" id="BrN-Tn-anh"/>
+                        <constraint firstAttribute="width" constant="294" id="hyd-Yp-LVH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlo-6L-9HF">
+                    <rect key="frame" x="13" y="414" width="294" height="146"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eVF-Cg-kCZ" secondAttribute="trailing" id="4Ct-mj-MsY"/>
+                <constraint firstAttribute="bottom" secondItem="jlo-6L-9HF" secondAttribute="bottom" constant="8" id="4hf-Gn-Meq"/>
+                <constraint firstItem="eVF-Cg-kCZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6Fm-XP-wVt"/>
+                <constraint firstItem="jlo-6L-9HF" firstAttribute="top" secondItem="FLF-0m-SgM" secondAttribute="bottom" constant="8" id="7HB-jN-2Ae"/>
+                <constraint firstAttribute="trailing" secondItem="jlo-6L-9HF" secondAttribute="trailing" constant="13" id="9ut-Ed-yTt"/>
+                <constraint firstItem="jlo-6L-9HF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="B8L-ti-BI9"/>
+                <constraint firstAttribute="centerY" secondItem="FLF-0m-SgM" secondAttribute="centerY" id="f2j-bl-qLP"/>
+                <constraint firstAttribute="centerX" secondItem="FLF-0m-SgM" secondAttribute="centerX" id="lma-Jx-67O"/>
+                <constraint firstItem="eVF-Cg-kCZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vlm-Dg-8Lk"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ServiceFailure" width="294" height="244"/>
+    </resources>
+</document>

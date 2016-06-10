@@ -1,0 +1,28 @@
+//
+//  DebugHeader.pch
+//  HaffleMonster
+//
+//  Created by Fermata on 2015. 4. 3..
+//  Copyright (c) 2015년 Haffle. All rights reserved.
+//
+
+#ifndef HaffleMonster_DebugHeader_pch
+#define HaffleMonster_DebugHeader_pch
+
+#define kHMBuildName @"Debug Build"
+#define kHMBuildVersionPrefix @"MD"
+
+#define kHMDefaultURL @"http://superready-staging.azurewebsites.net"
+#define kHMAPIDefaultURL @"http://superready-staging.azurewebsites.net/v1"
+
+#define kUseKakaoAnalytics false
+#define kUseCrashlytics true
+#define kUseInHouseMenu true
+#define kUseHMLogging true
+#define kUseHMLoggingOption HMLogImportant | HMLogError
+#define kShowRenewedUI false
+#define kUseCurrentLocation false
+
+#endif
+
+#import "Common.h"

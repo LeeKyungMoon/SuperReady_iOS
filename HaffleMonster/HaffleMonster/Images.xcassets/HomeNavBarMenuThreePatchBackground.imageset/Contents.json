@@ -1,0 +1,56 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "3-part-vertical",
+        "center" : {
+          "mode" : "fill",
+          "height" : 1
+        },
+        "capInsets" : {
+          "top" : 24,
+          "bottom" : 18
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "HomeNavBarMenuThreePatchBackground.png",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "3-part-vertical",
+        "center" : {
+          "mode" : "fill",
+          "height" : 1
+        },
+        "capInsets" : {
+          "top" : 38,
+          "bottom" : 32
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "HomeNavBarMenuThreePatchBackground@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "resizing" : {
+        "mode" : "3-part-vertical",
+        "center" : {
+          "mode" : "fill",
+          "height" : 1
+        },
+        "capInsets" : {
+          "top" : 56,
+          "bottom" : 51
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "HomeNavBarMenuThreePatchBackground@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

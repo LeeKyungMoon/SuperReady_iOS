@@ -1,0 +1,28 @@
+//
+//  DeployHeader.pch
+//  HaffleMonster
+//
+//  Created by Fermata on 2015. 4. 3..
+//  Copyright (c) 2015년 Haffle. All rights reserved.
+//
+
+#ifndef HaffleMonster_DeployHeader_pch
+#define HaffleMonster_DeployHeader_pch
+
+#define kHMBuildName @"AppStore Release"
+#define kHMBuildVersionPrefix @"MA"
+
+#define kHMDefaultURL @"http://superready.kr"
+#define kHMAPIDefaultURL @"http://superready.kr/v1"
+
+#define kUseKakaoAnalytics true
+#define kUseCrashlytics true
+#define kUseInHouseMenu false
+#define kUseHMLogging false
+#define kUseHMLoggingOption HMLogNone
+#define kShowRenewedUI false
+#define kUseCurrentLocation false
+
+#endif
+
+#import "Common.h"

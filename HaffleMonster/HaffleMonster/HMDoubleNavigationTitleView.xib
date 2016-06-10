@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HMDoubleNavigationTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="177" height="41"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="위치 설정" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJl-jg-rAa">
+                    <rect key="frame" x="0.0" y="1" width="177" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="mVt-sT-sTx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주소 가져오는 중..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNR-9O-fEf">
+                    <rect key="frame" x="0.0" y="24" width="177" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="y6k-JG-Jjk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cNR-9O-fEf" secondAttribute="trailing" id="3m0-Ku-Juw"/>
+                <constraint firstAttribute="trailing" secondItem="MJl-jg-rAa" secondAttribute="trailing" id="4mT-p3-FxY"/>
+                <constraint firstItem="cNR-9O-fEf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QfM-SB-NVE"/>
+                <constraint firstItem="MJl-jg-rAa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="dMa-cE-5IB"/>
+                <constraint firstAttribute="bottom" secondItem="cNR-9O-fEf" secondAttribute="bottom" constant="1" id="gOv-jK-urG"/>
+                <constraint firstItem="MJl-jg-rAa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ipb-1j-C8c"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="cNR-9O-fEf" id="4pm-qt-473"/>
+                <outlet property="titleLabel" destination="MJl-jg-rAa" id="yHH-CV-Ulf"/>
+            </connections>
+            <point key="canvasLocation" x="-216.5" y="-407.5"/>
+        </view>
+    </objects>
+</document>

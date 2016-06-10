@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMTutorialMainViewController">
+            <connections>
+                <outlet property="descriptionCardsView" destination="Q0K-cv-ksH" id="oFF-ZZ-JFn"/>
+                <outlet property="nextButton" destination="c3p-dA-P5w" id="VNO-dg-K0z"/>
+                <outlet property="pageControl" destination="MWT-sr-BVd" id="EFO-fP-x4J"/>
+                <outlet property="phoneImageView" destination="Ly7-5D-A7J" id="Z14-dg-DuU"/>
+                <outlet property="prevButton" destination="fmv-hT-Lla" id="Obw-Mo-9cN"/>
+                <outlet property="videoView" destination="rvE-Lu-vlM" id="wcW-fg-d9A"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0K-cv-ksH">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="187"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Q0K-cv-ksH" secondAttribute="height" multiplier="414:187" id="WzD-8y-nHb"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="DfO-Oz-tOa"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Hi-dl-VSO">
+                    <rect key="frame" x="0.0" y="187" width="414" height="549"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TutorialVideoAreaiPhone6Plus" translatesAutoresizingMaskIntoConstraints="NO" id="Ly7-5D-A7J">
+                            <rect key="frame" x="40" y="0.0" width="334" height="652"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Ly7-5D-A7J" secondAttribute="height" multiplier="167:326" id="7nw-O1-GzQ"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pck-S9-E6q">
+                            <rect key="frame" x="68" y="77" width="278" height="495"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-Lu-vlM">
+                                    <rect key="frame" x="2" y="2" width="274" height="491"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.88510239438006755" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Pck-S9-E6q" secondAttribute="height" multiplier="278:495" id="3lM-N2-aU6"/>
+                                <constraint firstAttribute="width" constant="278" id="BnR-rZ-ved"/>
+                                <constraint firstAttribute="trailing" secondItem="rvE-Lu-vlM" secondAttribute="trailing" constant="2" id="IIF-fG-mt9"/>
+                                <constraint firstItem="rvE-Lu-vlM" firstAttribute="leading" secondItem="Pck-S9-E6q" secondAttribute="leading" constant="2" id="N49-fx-3bG"/>
+                                <constraint firstAttribute="bottom" secondItem="rvE-Lu-vlM" secondAttribute="bottom" constant="2" id="sGq-la-oZh"/>
+                                <constraint firstItem="rvE-Lu-vlM" firstAttribute="top" secondItem="Pck-S9-E6q" secondAttribute="top" constant="2" id="tBg-gt-gEl"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                    <color key="value" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="MWT-sr-BVd">
+                            <rect key="frame" x="8" y="512" width="398" height="37"/>
+                            <color key="pageIndicatorTintColor" white="0.89164843841602948" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="currentPageIndicatorTintColor" white="0.62211718841602925" alpha="1" colorSpace="calibratedWhite"/>
+                        </pageControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3p-dA-P5w">
+                            <rect key="frame" x="211" y="480" width="68" height="34"/>
+                            <color key="backgroundColor" red="0.36862745098039218" green="0.71372549019607845" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="9tZ-OF-PKr"/>
+                                <constraint firstAttribute="width" constant="68" id="adn-mW-cU0"/>
+                            </constraints>
+                            <state key="normal" title="다음">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="nextButtonPressed" destination="-1" eventType="touchUpInside" id="WOF-kU-pnc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmv-hT-Lla">
+                            <rect key="frame" x="135" y="480" width="68" height="34"/>
+                            <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="68" id="WHM-FK-Unc"/>
+                                <constraint firstAttribute="height" constant="34" id="nSG-ub-bLi"/>
+                            </constraints>
+                            <state key="normal" title="이전">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="prevButtonPressed" destination="-1" eventType="touchUpInside" id="iMX-rN-ogj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fmv-hT-Lla" secondAttribute="bottom" constant="35" id="0CG-gN-TtA"/>
+                        <constraint firstAttribute="centerX" secondItem="c3p-dA-P5w" secondAttribute="centerX" constant="-38" id="7Pe-wf-3ca"/>
+                        <constraint firstAttribute="trailing" secondItem="MWT-sr-BVd" secondAttribute="trailing" constant="8" id="ZWJ-8D-JOy"/>
+                        <constraint firstItem="Ly7-5D-A7J" firstAttribute="top" secondItem="7Hi-dl-VSO" secondAttribute="top" id="aTp-jU-f6E"/>
+                        <constraint firstAttribute="trailing" secondItem="Ly7-5D-A7J" secondAttribute="trailing" constant="40" id="aZB-v2-cxy"/>
+                        <constraint firstItem="Ly7-5D-A7J" firstAttribute="leading" secondItem="7Hi-dl-VSO" secondAttribute="leading" constant="40" id="gvc-hw-DRX"/>
+                        <constraint firstAttribute="centerX" secondItem="fmv-hT-Lla" secondAttribute="centerX" constant="38" id="hQA-9O-ewO"/>
+                        <constraint firstItem="MWT-sr-BVd" firstAttribute="leading" secondItem="7Hi-dl-VSO" secondAttribute="leading" constant="8" id="jvh-BV-kWq"/>
+                        <constraint firstAttribute="bottom" secondItem="MWT-sr-BVd" secondAttribute="bottom" id="kkD-nt-TUH"/>
+                        <constraint firstItem="Pck-S9-E6q" firstAttribute="top" secondItem="7Hi-dl-VSO" secondAttribute="top" constant="77" id="osZ-Ua-4CF"/>
+                        <constraint firstAttribute="centerX" secondItem="Pck-S9-E6q" secondAttribute="centerX" id="qlY-cq-jh0"/>
+                        <constraint firstAttribute="centerX" secondItem="Ly7-5D-A7J" secondAttribute="centerX" id="rI8-re-mu8"/>
+                        <constraint firstAttribute="bottom" secondItem="c3p-dA-P5w" secondAttribute="bottom" constant="35" id="uBt-l9-koj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7Hi-dl-VSO" firstAttribute="top" secondItem="Q0K-cv-ksH" secondAttribute="bottom" id="UOd-H6-Hxv"/>
+                <constraint firstAttribute="trailing" secondItem="Q0K-cv-ksH" secondAttribute="trailing" id="UWf-HX-pfL"/>
+                <constraint firstItem="Q0K-cv-ksH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V4J-pc-c9R"/>
+                <constraint firstAttribute="bottom" secondItem="7Hi-dl-VSO" secondAttribute="bottom" id="a9V-r5-JQe"/>
+                <constraint firstItem="7Hi-dl-VSO" firstAttribute="top" secondItem="Q0K-cv-ksH" secondAttribute="bottom" id="agd-0p-UVW"/>
+                <constraint firstItem="7Hi-dl-VSO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h2S-23-Y37"/>
+                <constraint firstAttribute="trailing" secondItem="7Hi-dl-VSO" secondAttribute="trailing" id="kbS-D9-N8r"/>
+                <constraint firstItem="Q0K-cv-ksH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uhd-gT-h8U"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="374" y="629"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TutorialVideoAreaiPhone6Plus" width="334" height="652"/>
+    </resources>
+</document>

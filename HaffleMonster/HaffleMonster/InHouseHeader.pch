@@ -1,0 +1,29 @@
+//
+//  InHouseHeader.pch
+//  HaffleMonster
+//
+//  Created by Fermata on 2015. 4. 3..
+//  Copyright (c) 2015년 Haffle. All rights reserved.
+//
+
+#ifndef HaffleMonster_InHouseHeader_pch
+#define HaffleMonster_InHouseHeader_pch
+
+#define kHMBuildName @"In-House QA Release"
+#define kHMBuildVersionPrefix @"AI"
+
+#define kHMDefaultURL @"http://superready-staging.azurewebsites.net"
+#define kHMAPIDefaultURL @"http://superready-staging.azurewebsites.net/v1"
+
+#define kUseKakaoAnalytics false
+#define kUseCrashlytics true
+#define kUseInHouseMenu true
+#define kUseHMLogging false
+#define kUseHMLoggingOption HMLogNone
+#define kShowRenewedUI false
+#define kUseCurrentLocation false
+
+
+#endif
+
+#import "Common.h"
